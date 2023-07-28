@@ -1,0 +1,5 @@
+keras==2.6.0
+scikit-learn==1.1.1
+tensorflow==2.6.0
+pubchempy==1.0.4
+
