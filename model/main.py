@@ -3,11 +3,11 @@ from web_model import *
 import argparse
 
 def main():
-    parser = argparse.ArgumentParser("This is a program for creating the substructure data for your compounds.\n \
+    parser = argparse.ArgumentParser("This is an Antibiotic Combination Recommendation program.\n \
                                         这是一个用于预测抗生素联合用药风险等级的程序")
     parser.add_argument('-i', '--input_data', required=True, default='zhengshijiangnanhaofengjing', 
                         help='The form of input data is a pair of drugs without header.\n \
-                        输入一个不带表头的只有两列的药物对数据,两列用逗号或者Tab键分隔,输入英文名哈,中文还不支持')
+                        输入一个不带表头的只有两列的药物对数据,两列用逗号或者Tab键分隔,请输入英文名')
     parser.add_argument('-n', '--data_number', required=True, default=0, 
                         help='The max number of your drug pairs. \n \
                             输入文件的最大数据量')
